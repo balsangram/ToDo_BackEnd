@@ -7,7 +7,8 @@ const bodyParser = require('body-parser')
 const app = express();
 const port = 8000;
 // const mongo_url = "mongodb://localhost:27017/todo";
-const mongo_url = "mongodb+srv://balsangram1:756100@cluster0.ec1tvw7.mongodb.net/todo"
+const mongo_url ="mongodb+srv://balsangram1:756100@cluster0.ec1tvw7.mongodb.net/todo?retryWrites=true&w=majority"
+
 
 // Middleware
 app.use(bodyParser.json()); // Parse JSON data
