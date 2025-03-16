@@ -17,10 +17,7 @@ app.use(cors());
 
 // MongoDB Connection
 mongoose
-  .connect(mongo_url, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(mongo_url)
   .then(() => console.log("✅ Connected to MongoDB"))
   .catch((err) => console.error("❌ MongoDB connection error:", err));
 
